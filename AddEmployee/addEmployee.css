@@ -29,6 +29,7 @@ li a:hover {
 input[type="text"],
 input[type="email"],
 input[type="date"],
+input[type="number"],
 select {
   width: 100%;
   padding: 12px 20px;
@@ -39,7 +40,7 @@ select {
   box-sizing: border-box;
 }
 
-input[type="submit"] {
+button[type="submit"] {
   width: 100%;
   background-color: #4caf50;
   color: white;

@@ -26,30 +26,65 @@ li a:hover {
   background-color: #111;
 }
 
-#customers {
+#employees {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-#customers td,
-#customers th {
+#employees td,
+#employees th {
   border: 1px solid #ddd;
   padding: 8px;
 }
 
-#customers tr:nth-child(even) {
+#employees tr:nth-child(even) {
   background-color: #f2f2f2;
 }
 
-#customers tr:hover {
+#employees tr:hover {
   background-color: #ddd;
 }
 
-#customers th {
+#employees th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: left;
   background-color: #04aa6d;
   color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+div.example input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 60%;
+  background: #f1f1f1;
+}
+
+div.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196f3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+div.example button:hover {
+  background: #0b7dda;
+}
+
+div.example::after {
+  content: "";
+  clear: both;
+  display: table;
 }

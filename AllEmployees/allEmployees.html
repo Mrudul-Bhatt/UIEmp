@@ -5,16 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="allEmployees.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="allEmployees.js" defer></script>
   </head>
 
   <body>
     <ul>
-      <li><a class="active" href="index.html">Home</a></li>
+      <li><a class="active" href="../Index/index.html">Home</a></li>
       <li><a href="allEmployees.html">All Employees</a></li>
-      <li><a href="addEmployee.html">Add Employee</a></li>
+      <li><a href="../AddEmployee/addEmployee.html">Add Employee</a></li>
     </ul>
     <br />
-    <table id="customers">
+    <div class="example">
+      <input type="text" placeholder="Search.." name="search" />
+      <button id="searchEmp" type="submit">Search Employee</button>
+      <button id="allEmp" style="background-color: green" type="submit">
+        All Employees
+      </button>
+    </div>
+    <br />
+    <table id="employees">
       <tr>
         <th>Name</th>
         <th>Email</th>
@@ -23,7 +36,7 @@
         <th>Department</th>
         <th>Details</th>
       </tr>
-      <tr>
+      <!-- <tr>
         <td>Alfreds Futterkiste</td>
         <td>A@f.com</td>
         <td>12-33-11</td>
@@ -46,7 +59,9 @@
         <td>13211313</td>
         <td>IT</td>
         <td>View</td>
-      </tr>
+      </tr> -->
     </table>
   </body>
+
+  <script></script>
 </html>
