@@ -1,5 +1,6 @@
 {
-  "liveServer.settings.port": 5501,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.wordWrapColumn": 120
+	"liveServer.settings.port": 5501,
+	"editor.fontFamily": "JetBrains Mono",
+	"editor.wordWrapColumn": 120,
+	"editor.fontSize": 16
 }

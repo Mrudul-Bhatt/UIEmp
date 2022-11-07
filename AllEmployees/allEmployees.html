@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="allEmployees.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="allEmployees.js" defer></script>
-  </head>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Bootstrap demo</title>
+		<link rel="stylesheet" href="allEmployees.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<script src="allEmployees.js" defer></script>
+	</head>
 
-  <body>
-    <ul>
-      <li><a class="active" href="../Index/index.html">Home</a></li>
-      <li><a href="allEmployees.html">All Employees</a></li>
-      <li><a href="../AddEmployee/addEmployee.html">Add Employee</a></li>
-    </ul>
-    <br />
-    <div class="example">
-      <input type="text" placeholder="Search.." name="search" />
-      <button id="searchEmp" type="submit">Search Employee</button>
-      <button id="allEmp" style="background-color: green" type="submit">
-        All Employees
-      </button>
-    </div>
-    <br />
-    <table id="employees">
-      <tr>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Date of Birth</th>
-        <th>Salary</th>
-        <th>Department</th>
-        <th>Details</th>
-      </tr>
-      <!-- <tr>
-        <td>Alfreds Futterkiste</td>
-        <td>A@f.com</td>
-        <td>12-33-11</td>
-        <td>13211313</td>
-        <td>IT</td>
-        <td>View</td>
-      </tr>
-      <tr>
-        <td>John Doe</td>
-        <td>j@d.com</td>
-        <td>12-33-11</td>
-        <td>13211313</td>
-        <td>HR</td>
-        <td>View</td>
-      </tr>
-      <tr>
-        <td>Allen Smith</td>
-        <td>A@S.com</td>
-        <td>12-33-11</td>
-        <td>13211313</td>
-        <td>IT</td>
-        <td>View</td>
-      </tr> -->
-    </table>
-  </body>
+	<body>
+		<ul>
+			<li><a class="active" href="../Index/index.html">Home</a></li>
+			<li><a href="allEmployees.html">All Employees</a></li>
+			<li><a href="../AddEmployee/addEmployee.html">Add Employee</a></li>
+		</ul>
+		<br />
+		<div class="example">
+			<input id="searchName" type="text" placeholder="Search.." name="search" />
+			<button id="searchEmp" type="submit">Search Employee</button>
+			<button id="allEmp" style="background-color: green" type="submit">
+				All Employees
+			</button>
+		</div>
+		<br />
+		<table id="employees">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Date of Birth</th>
+					<th>Salary</th>
+					<th>Department</th>
+					<th>Details</th>
+				</tr>
+			</thead>
+			<tbody id="employees_list"></tbody>
+		</table>
+	</body>
 
-  <script></script>
+	<script></script>
 </html>
