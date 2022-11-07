@@ -22,11 +22,11 @@ const addEmpHandler = () => {
 
   if (name.trim() === "") {
     alert("Name is empty!");
-  } else if (!name.match(name_format)) {
+  } else if (!name.trim().match(name_format)) {
     alert("Please enter valid name!");
   } else if (email.trim() === "") {
     alert("Email is empty!");
-  } else if (!email.match(mail_format)) {
+  } else if (!email.trim().match(mail_format)) {
     alert("Please enter valid email!");
   } else if (dob.trim() === "") {
     alert("Date of birth is empty!");
